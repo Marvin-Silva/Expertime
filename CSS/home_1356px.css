@@ -1,0 +1,24 @@
+/* Responsive */
+
+@media screen and (max-width:1356px) {
+    /* changement de couleur automatique à la taille inferieur à 1356px */
+    #text-header-left h1{
+    color: 	rgb(0,255,0);
+    }
+    /*  */
+    #text-header-right {
+        width: auto;
+        float: right;
+    }
+    #text-header-right p {
+        width: auto;
+        height: auto;
+        float: right;
+    }
+    }
+/*     
+    @media all and (min-width:1072px) {
+    
+    
+    } */
+

@@ -1,0 +1,202 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    top: 0%;  
+    background: linear-gradient(180deg, rgba(35, 31, 16, 0.25) 0%, rgba(35, 31, 16, 0) 100%);
+}
+
+header {
+    height: 620px;
+    font-family: 'Nanum Myeongjo', serif;
+    background-image: url('Rectangle.png') ;
+    background-size: 100%;
+    background-repeat: no-repeat;    
+}
+nav{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    list-style-type: none;
+    width: 100%;
+    height: 80px;
+    font-size: 16px;
+    padding-left: 170px;
+    text-align: center; 
+    mix-blend-mode: multiply;
+}
+
+.menu li {
+    display: flex;
+    white-space: nowrap;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    margin-right: 32px;  
+    /* margin-top: 34px; */
+    border-bottom:2px none #FFFFFF; 
+}
+.menu li a{
+    color: rgb(239, 242, 245);
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+.menu #logo {
+    margin-left: 133px;
+    margin-right: 115.33px;
+}
+/* les trois vecteurs de la logo */
+.menu #vector1, #vector2, #vector3{
+    float: left;
+}
+.menu #logo #vector1{
+    height: 32.02px;
+    width: 32.02px;
+}
+.menu #logo #vector2{
+    height: 24.02px;
+    width: 20.02px;
+}
+.menu #logo #vector3{
+    height: 24.19px;
+    width: 21.07px;
+}
+/* icone collé dans le menu en haut à gauche de la page */
+.menu #iconClose {
+    display: flex;
+    float: left;
+}
+/* la taille de tous les icones du menu */
+.menu img {
+    height: 16px;
+}
+
+/* conteneur du texte de gauche */
+#text-header-left{
+    position: absolute;
+    margin-top: 230px;
+    padding-left: 169px;
+    width: 362px;
+    color:rgb(239, 242, 245);
+    /* height: 540px; */
+}
+/* element du texte de gauche */
+#text-header-left h1{
+    float: left;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+    height: 231px;
+    font-size: 64px;
+    margin-top: 0;
+    white-space: pre-line;
+}
+/* animation du texte de gauche */
+#text-header-left h1::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;  
+}
+@keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+/* conteneur du texte de droite */
+#text-header-right{
+    margin-top: 230px;
+    color:rgb(239, 242, 245);
+    float: right;
+    width: 720px;
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+}
+/* elements du texte de droite */
+#text-header-right h3{
+    text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 24px; 
+    width: 372px;
+    height: 29px;
+    float: right;
+    margin-right: 168px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+#text-header-right p{
+    height: 79px;
+    width: 372px;
+    float: right;
+    margin-right: 168px;
+    top: 265px;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-align: justify;
+    line-height: 22px;
+}
+#text-header-right a, input{
+    margin-left: 199px;
+    right: 168px;
+    font-family: 'Prompt', sans-serif;
+    text-align: justify;
+    cursor: pointer;
+}
+#text-header-right input{
+    display: block;
+    height: 54px;
+    color:rgba(35, 31, 16, 1);
+    background: #FFFFFF;
+    border-radius: 27px;
+    border-color: rgba(255, 255, 255, 1);
+    width: 280px;
+    line-height: 22px;
+    text-align: center;
+    font-size: 15px;
+    float: right;
+    margin-right: 260px;
+}
+#text-header-right a{
+    height: 17px;
+    width: 372px;
+    float: right;
+    margin-right: 168px;
+    color: #FFFFFF;
+    line-height: 22px;
+    text-align: left;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    padding-bottom: 44px;
+    padding-top: 8px;
+}
+/* hover sur la liste du menu */
+.menu li:hover {
+    border-bottom:2px solid #FFFFFF;
+
+}
+/* debut du corps section */
+#rectangle{
+    border: 2px solid;
+    width: 1196px;
+    height: 82px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.07);
+    margin-left: 120px;
+    margin-right: 120px; 
+
+}
+#rectangle h2 {
+    display: block;
+    border: 2px solid;
+    width: 723px;
+    height: 39px;
+    margin-left: 238px;
+    margin-right: 239px;
+    margin-top: 49px;
+}
